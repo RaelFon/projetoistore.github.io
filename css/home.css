@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffc700;
+    /* width: 100%;
+    height: 68px; */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav div {
+    padding: 16px;
+}
+
+header nav div img {
+    margin-right: 10px;
+}
+
+header nav div a {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 4% 0;
+    margin-right: 40px;
+    transition: padding 1s;
+}
+
+header nav div a:hover {
+    border: 2px dashed #0000006c;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+.banner {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding-top: 80px;
+    padding: 15px;
+    font-weight: 700;
+}
+
+.banner h1 {
+    font-size: 45px;
+    max-width: 20%;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.oferta {
+    padding-top: 10px;
+}
+
+.oferta .flex .texto {
+    max-width: 45%;
+}
+
+.oferta .flex ul h3 {
+    margin-bottom: 20px;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 25px;
+}
+
+h2 {
+    margin-top: 120px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.texto p {
+    margin: 40px 0;
+}
+
+.outras-imagens .flex {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer {
+    background-color: #000;
+    padding: 60px 0;
+    margin-top: 120px;
+}
+
+footer .flex {
+    color: #fff;
+    justify-content: unset;
+    column-gap: 35%;
+}
+
+footer .flex p {
+    margin: 20px 0;
+}
+
+footer .flex p strong,
+footer .flex ul strong {
+    margin-bottom: 5px;
+    color: #ffc700;
+}
+
+footer .flex ul strong {
+    display: block;
+}
+
+footer .flex ul li {
+    padding: 0;
+}
+
+footer span {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+footer span strong {
+    color: #ffc700;
+}
+
+.font-color-yellow {
+    display: block;
+    margin-top: 20px;
+    color: #ffc700;
+    text-decoration: none;
+}
+
+.main-image,
+.outras-imagens .flex img {
+    transition: all 0.5s;
+}
+
+.outras-imagens .flex img {
+    opacity: 0.7;
+}
+
+.outras-imagens .flex img:hover {
+    cursor: pointer;
+    border: 2px solid #ccc;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+.outras-imagens .flex .current {
+    opacity: 1;
+    border: 4px double #000;
+    transform: scale(1.2);
+}
