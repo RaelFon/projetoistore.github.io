@@ -14,7 +14,7 @@ function changeImage(value) {
         if (images[i].className == value) {
             currentImage.classList.add("current")
 
-            image.setAttribute("src", `/images/${value}-750x500.png`);
+            image.setAttribute("src", `./images/${value}-750x500.png`);
         } 
         
         else {
