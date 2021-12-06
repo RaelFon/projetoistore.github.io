@@ -5,7 +5,7 @@
 }
 
 .container {
-    padding: 0 5%;
+    padding: 0 calc((100vw - (1366px - (2 * (1366px * 5 / 100)))) / 2);
 }
 
 header {
@@ -13,8 +13,6 @@ header {
     top: 0;
     z-index: 1;
     background-color: #ffc700;
-    /* width: 100%;
-    height: 68px; */
 }
 
 header nav {
@@ -53,9 +51,9 @@ header nav div a:hover {
     justify-content: space-around;
     align-items: center;
     color: #fff;
-    padding-top: 80px;
-    padding: 15px;
     font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .banner h1 {
@@ -159,8 +157,13 @@ footer span strong {
     transition: all 0.5s;
 }
 
+.outras-imagens .flex {
+    justify-content: space-around;
+}
+
 .outras-imagens .flex img {
     opacity: 0.7;
+    width: 250px;
 }
 
 .outras-imagens .flex img:hover {
