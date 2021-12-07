@@ -31,16 +31,19 @@ header nav div img {
 
 header nav div a {
     color: #000;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     text-decoration: none;
-    padding: 4% 0;
+    opacity: 1;
+    transition: all 1s;
+}
+
+header nav div a:not(:last-child){
     margin-right: 40px;
-    transition: padding 1s;
 }
 
 header nav div a:hover {
-    border: 2px dashed #0000006c;
+    opacity: 0.7;
     border-radius: 15px;
     padding: 0 20px;
 }
@@ -87,7 +90,7 @@ ul li {
 }
 
 h2 {
-    margin-top: 120px;
+    margin-top: 60px;
     font-size: 40px;
     font-weight: normal;
 }
@@ -162,7 +165,7 @@ footer span strong {
 }
 
 .outras-imagens .flex img {
-    opacity: 0.7;
+    opacity: 0.6;
     width: 250px;
 }
 
@@ -179,4 +182,48 @@ footer span strong {
     opacity: 1;
     border: 4px double #000;
     transform: scale(1.2);
+}
+
+@media (max-width: 720px){
+
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    header nav div {
+        padding: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .banner img {
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    .oferta h2{
+        margin-top: 20px;
+    }
+    
+    .main-image {
+        width: 100%;
+    }
+    
+    .oferta .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        text-align: center;
+    }
 }
